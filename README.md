@@ -4,7 +4,7 @@
 
 Patterns behind the hybrid semantic search I designed for **[Tur.com](https://www.tur.com/)**, a multi-tenant travel marketplace live in 10 countries, on a Go backend with PostgreSQL, Elasticsearch and OpenAI embeddings.
 
-> **Rewritten from scratch to protect client code.** This is not the production source: names, schemas and infrastructure are replaced, and external services (Elasticsearch, Redis, the embeddings API) sit behind small interfaces with in-memory fakes, so everything here compiles and runs with no credentials.
+> **Note.** Every sample here was written from scratch, independently, for this portfolio. None of it is client code, and it contains no client data, schemas, credentials or infrastructure details. The samples show general, widely used engineering patterns, simplified to illustrate my approach; the real implementations belong to the client and stay private. External services (Elasticsearch, Redis, the embeddings API) sit behind small interfaces with in-memory fakes, so everything here compiles and runs with no credentials.
 
 **Results in production:** nDCG@5 0.41 → 0.75 · empty searches 31 → 0 · cached search ~35 ms.
 Full case study: [horacioparisotto.com](https://www.horacioparisotto.com/)
